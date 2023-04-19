@@ -2,24 +2,25 @@
   <div class="page">
     <div class="card">
       <RouterLink to="/FollowMouseMove">
-        跟随鼠标移动 - FollowMouseMove
+        🖱️ 跟随鼠标移动
+      </RouterLink>
+    </div>
+    <div class="card">
+      <RouterLink to="/FollowMouseMove2">
+        🖱️ 跟随鼠标移动2
       </RouterLink>
     </div>
     <div class="card">
       <RouterLink to="/DragAndDropChangeList">
-        拖放改变列表顺序 - DragAndDropChangeList
+        👆 拖放改变列表顺序
       </RouterLink>
     </div>
     <div class="card">
       <RouterLink to="/DragAndDropChangeList2">
-        DragAndDropChangeList2
+        👆【改进】拖放改变列表顺序2
       </RouterLink>
     </div>
-    <div class="card">
-      <RouterLink to="/FollowTest">
-        FollowTest
-      </RouterLink>
-    </div>
+    
   </div>
 </template>
 
@@ -29,6 +30,9 @@ import { RouterLink } from "vue-router";
 </script>
 
 <style lang="scss" scoped>
+*{
+  user-select: none;
+}
 .page {
   width: 100%;
   height: 100vh;

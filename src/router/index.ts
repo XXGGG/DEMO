@@ -10,6 +10,11 @@ const routes = [
     component: () => import("../demo/FollowMouseMove/FollowMouseMove.vue"),
   },
   {
+    path: "/FollowMouseMove2",
+    name: "FollowMouseMove2",
+    component: () => import("../demo/FollowMouseMove2/FollowMouseMove2.vue"),
+  },
+  {
     path: "/DragAndDropChangeList",
     name: "DragAndDropChangeList",
     component: () =>
@@ -20,11 +25,6 @@ const routes = [
     name: "DragAndDropChangeList2",
     component: () =>
       import("../demo/DragAndDropChangeList2/DragAndDropChangeList2.vue"),
-  },
-  {
-    path: "/FollowTest",
-    name: "FollowTest",
-    component: () => import("../demo/FollowTest/FollowTest.vue"),
   },
 ];
 

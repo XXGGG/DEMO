@@ -9,7 +9,6 @@
         @mouseup="handleMouseUp($event)"
         @mousemove="mousemove(index)"
         @pointerover="pointerenter(index)"
-        
         >
         {{ i }}
       </div>
