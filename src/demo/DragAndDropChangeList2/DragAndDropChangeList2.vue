@@ -85,15 +85,15 @@ document.addEventListener("dragend", function (ev) {
 //2.拖拽进入👇
 function dragenter(ev: any, index: any) {
   out_index = index;
-  console.log(in_index)
-  console.log(out_index)
-  // if (in_index > out_index) {
-  //   list.value.splice(out_index, 0, list.value[in_index]);
-  //   list.value.splice(in_index + 1, 1);
-  // } else if (in_index < out_index) {
-  //   list.value.splice(out_index + 1, 0, list.value[in_index]);
-  //   list.value.splice(in_index, 1);
-  // }
+  // console.log(in_index)
+  // console.log(out_index)
+  if (in_index > out_index) {
+    list.value.splice(out_index, 0, list.value[in_index]);
+    list.value.splice(in_index + 1, 1);
+  } else if (in_index < out_index) {
+    list.value.splice(out_index + 1, 0, list.value[in_index]);
+    list.value.splice(in_index, 1);
+  }
   in_index = index;
 }
 let dragend = (event: any, index: any) => {
@@ -117,7 +117,7 @@ let dragend = (event: any, index: any) => {
 }
 .item {
   width: 100%;
-  max-width: 400px;
+  max-width: 100px;
   height: 40px;
   background-color: rgb(80, 80, 80);
   display: flex;
@@ -130,6 +130,5 @@ let dragend = (event: any, index: any) => {
 
 .list-move {
   transition: all 0.2s;
-  position: absolute;
 }
 </style>
